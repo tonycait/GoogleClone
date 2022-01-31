@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.google {
+  width: 20%;
+  height: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.navbar ul li:hover {
+  cursor: pointer;
+}
+
+.navbar ul li button {
+  height: 35px;
+  width: 100px;
+  background-color: #4086f4;
+  border-radius: 5px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar ul li button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btndotscontainer {
+  height: 40px;
+  width: 40px;
+}
+
+.dots {
+  height: 20px;
+  width: 20px;
+}
+
+.dots:hover {
+  cursor: pointer;
+}
+
+/* Navbar ends here */
+
+.googlecontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin-top: 10%;
+}
+
+/* Google container ends here */
+
+.searchcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+}
+
+#searchgoogle {
+  width: 35%;
+  height: 40px;
+  border-radius: 35px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#searchgoogle:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+}
+
+#searchgoogle:hover {
+  -webkit-box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+}
+
+/* Search container ends here */
+
+.btncontainerarea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 400px;
+  margin: 20px;
+}
+
+.buttoncontainer button {
+  height: 35px;
+  width: 150px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  border: none;
+}
+
+.buttoncontainer button:hover {
+  border: 1px solid rgb(163, 163, 163);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 10px -13px rgba(66, 68, 90, 1);
+}
+
+/* button container ends here*/
+
+.linkcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.linkcontainer {
+  padding: 10px;
+}
+
+.linkcontainer a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4086f4;
 }
